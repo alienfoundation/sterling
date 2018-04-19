@@ -46,6 +46,13 @@ nav ul li.right {
     text-align: right;
 }
 
+.branch-container .branch {
+    max-width: 200px;
+    float: right;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .product-master-container .heading {
     font-family: "Titillium Web", sans-serif;
     font-weight: 600;
@@ -99,8 +106,8 @@ nav ul li.right {
 }
 
 .table tr.total td:first-child {
-    background: rgb(0, 174, 247);
-    color: #fafafa;
+    color: #333;
+    text-align: center;
 }
 
 .product-master-container table td.action {
@@ -108,4 +115,9 @@ nav ul li.right {
     background: #ff9800;
     color: #fafafa;
     text-align: center;
+}
+@media (max-width: 767px) {
+    nav ul {
+        padding: 0;
+    }
 }

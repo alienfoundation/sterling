@@ -176,6 +176,8 @@ nav ul li.right {
 
 @media (max-width: 767px) {
 
+
+
     .logo-container {
         margin-right: 0;
         margin-left: 0;
@@ -184,18 +186,13 @@ nav ul li.right {
         text-align: center;
     }
 
-    .logo-container img {
-        width: 40%;
+    nav ul {
+        padding: 0;
     }
 
     .login-wrapper {
         height: auto;
         width: 100%;
-    }
-
-    body {
-        padding-left: 8%;
-        padding-right: 8%;
     }
 }
 

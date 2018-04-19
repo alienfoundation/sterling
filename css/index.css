@@ -116,10 +116,7 @@ nav ul li.right {
 @media (max-width: 1000px) {
     .login-wrapper {
         width: 150%;
-    }
-
-    .logo-container {
-        margin-left: -50%;
+        margin-left: -25%;
     }
 }
 
@@ -139,11 +136,10 @@ nav ul li.right {
     .login-wrapper {
         height: auto;
         width: 100%;
+        margin-left: 0%;
     }
 
     body {
-        padding-left: 8%;
-        padding-right: 8%;
     }
 }
 

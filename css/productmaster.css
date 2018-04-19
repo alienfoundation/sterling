@@ -115,3 +115,9 @@ th.last {
     text-align: center;
     background: #ff9800;
 }
+
+@media (max-width: 767px) {
+    nav ul {
+        padding: 0;
+    }
+}

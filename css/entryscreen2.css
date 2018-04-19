@@ -81,3 +81,9 @@ nav ul li.right {
     color: #fafafa;
     text-align: center;
 }
+
+@media (max-width: 767px) {
+    nav ul {
+        padding: 0;
+    }
+}

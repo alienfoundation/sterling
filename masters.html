@@ -22,74 +22,81 @@
 
             <nav>
                     <ul>
-                        <li>Nikhil Thakur</li>
-                        <li>Admin</li>
+                        <li><img src="images/logo.png"></li>
+                        <li class="right">Nikhil Thakur<br>Admin</li>
                     </ul>
                 </nav>
 
-        <div class="product-master-container">
-            <h2 class="heading">Masters</h2>
-            <div class="row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4 add-btn-container">
-                    <button class="add-btn" id="add-btn">Add</button>
-                </div>
-                <div class="col-sm-4"></div>
-            </div>
-            <form class="form-container" id="form-container">
                 <div class="row">
-                    <div class="col-sm-4"></div>
-                    <div class="col-sm-4">
-                        <div class="form">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h3>Applicable For </h3>
-                                    <div class="close-btn-container" id="close-btn">
-                                        <span class="glyphicon glyphicon-remove"></span>
+
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                            <div class="product-master-container">
+                                    <h2 class="heading">Masters</h2>
+                                    <div class="row">
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-4 add-btn-container">
+                                            <button class="add-btn" id="add-btn">Add</button>
+                                        </div>
+                                        <div class="col-sm-4"></div>
+                                    </div>
+                                    <form class="form-container" id="form-container">
+                                        <div class="row">
+                                            <div class="col-sm-1"></div>
+                                            <div class="col-sm-10">
+                                                <div class="form">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h3>Applicable For </h3>
+                                                            <div class="close-btn-container" id="close-btn">
+                                                                <span class="glyphicon glyphicon-remove"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <label for="location">Location</label>
+                                                    <input type="text" id="location">
+                        
+                                                    <label for="role">Role</label>
+                                                    <input type="text" id="role">
+                        
+                                                    <label for="branch">Branch</label>
+                                                    <input type="text" id="branch">
+                        
+                                                    <div class="submit-container">
+                                                        <input type="submit" value="Add" onclick="addRowFunc()">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-1"></div>
+                                        </div>
+                                    </form>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped" id="myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>IsActive</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="purple-half">
+                                                    <td>Chennai</td>
+                                                    <td class="tick"><span class="glyphicon glyphicon-ok"></span></td>
+                                                    <td class="action" onclick="deleteRowFunc(1)"><span class="glyphicon glyphicon-trash"></span></td>
+                                                </tr>
+                                                <tr class="purple-half">
+                                                    <td>Delhi</td>
+                                                    <td class="tick"><span class="glyphicon glyphicon-ok"></span></td>
+                                                    <td class="action" onclick="deleteRowFunc(2)"><span class="glyphicon glyphicon-trash"></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
-                            </div>
-                            <label for="location">Location</label>
-                            <input type="text" id="location">
-
-                            <label for="role">Role</label>
-                            <input type="text" id="role">
-
-                            <label for="branch">Branch</label>
-                            <input type="text" id="branch">
-
-                            <div class="submit-container">
-                                <input type="submit" value="Add" onclick="addRowFunc()">
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-sm-4"></div>
+                    <div class="col-sm-3"></div>
                 </div>
-            </form>
-            <div class="table-responsive">
-                <table class="table table-striped" id="myTable">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>IsActive</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="purple-half">
-                            <td>Chennai</td>
-                            <td class="tick"><span class="glyphicon glyphicon-ok"></span></td>
-                            <td class="action" onclick="deleteRowFunc(1)">Delete</td>
-                        </tr>
-                        <tr class="purple-half">
-                            <td>Delhi</td>
-                            <td class="tick"><span class="glyphicon glyphicon-ok"></span></td>
-                            <td class="action" onclick="deleteRowFunc(2)">Delete</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
 
     </div>
 

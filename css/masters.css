@@ -1,6 +1,5 @@
 body {
-    padding-top: 30px;
-    background: url("../images/loginbg4.jpg");
+    background: #d008b9;
     background-position: bottom;
     background-size: cover;
     padding-bottom: 50px;
@@ -11,6 +10,8 @@ body * {
 }
 
 nav {
+    margin-left: -15px;
+    margin-right: -15px;
     border-radius: 2px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 2px 7px -1px rgba(0,0,0,0.2);
@@ -20,15 +21,16 @@ nav {
 nav ul li {
     display: inline-block;
     list-style-type: none;
-    font-size: 17px;
+    font-size: 16px;
     padding: 20px;
     color: #444;
 }
 
 
-nav ul li:last-child {
+nav ul li.right {
     float: right;
     margin-right: 30px;
+    margin-top: 5px;
 }
 
 .product-master-container {
@@ -165,7 +167,8 @@ nav ul li:last-child {
 
 .product-master-container table td.action {
     cursor: pointer;
-    color: #333;
-    background: yellow;
+    background: #ff9800;
+    color: #fafafa;
+    text-align: center;
 }
 

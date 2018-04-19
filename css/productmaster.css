@@ -1,6 +1,7 @@
 body {
-    padding-top: 30px;
-    background: url("../images/loginbg4.jpg");
+    /* background: url("../images/loginbg4.jpg"); */
+   
+    background: #d008b9;
     background-position: bottom;
     background-size: cover;
     padding-bottom: 50px;
@@ -11,6 +12,8 @@ body * {
 }
 
 nav {
+    margin-left: -15px;
+    margin-right: -15px;
     border-radius: 2px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 2px 7px -1px rgba(0,0,0,0.2);
@@ -20,15 +23,16 @@ nav {
 nav ul li {
     display: inline-block;
     list-style-type: none;
-    font-size: 17px;
+    font-size: 16px;
     padding: 20px;
     color: #444;
 }
 
 
-nav ul li:last-child {
+nav ul li.right {
     float: right;
     margin-right: 30px;
+    margin-top: 5px;
 }
 
 .product-master-container {
@@ -52,9 +56,13 @@ nav ul li:last-child {
 }
 
 .product-master-container th {
-    background: rgba(141, 29, 130, 0.8);
-    color: #fff;
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     font-weight: 500;
+}
+
+th.last {
+    border: none;
 }
 
 .table>thead>tr>th {
@@ -86,7 +94,9 @@ nav ul li:last-child {
     color: #333;
     border-radius: 2px;
     border: none;
-    padding: 5px;
+    padding: 2px;
+    font-size: 15px;
+    width: 100px;
 }
 
 .table tr input[type='submit'] {

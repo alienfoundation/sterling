@@ -1,6 +1,5 @@
 body {
-    margin-top: 5%;
-    background: url("../images/loginbg4.jpg");
+    background: #d008b9;
     background-position: bottom;
     background-size: cover;
     padding-bottom: 70px;
@@ -11,6 +10,8 @@ body * {
 }
 
 nav {
+    margin-left: -15px;
+    margin-right: -15px;
     border-radius: 2px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 2px 7px -1px rgba(0,0,0,0.2);
@@ -20,15 +21,16 @@ nav {
 nav ul li {
     display: inline-block;
     list-style-type: none;
-    font-size: 17px;
+    font-size: 16px;
     padding: 20px;
     color: #444;
 }
 
 
-nav ul li:last-child {
+nav ul li.right {
     float: right;
     margin-right: 30px;
+    margin-top: 5px;
 }
 
 .logo-container {
@@ -70,7 +72,7 @@ nav ul li:last-child {
     font-size: 14px;
     border-radius: 0px;
     border: none;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid #d8d8d8;
     margin-bottom: 20px;
     color: #555;
     transition: all 0.5s ease;
@@ -131,8 +133,9 @@ nav ul li:last-child {
 }
 
 .user-display-container th {
-    background: rgba(141, 29, 130, 0.8);
-    color: #fff;
+    /* background: rgba(141, 29, 130, 0.8); */
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     font-weight: 500;
 }
 
@@ -140,13 +143,25 @@ nav ul li:last-child {
     border-bottom: none;
 }
 
+.table>thead>tr>th.last {
+    border: none;
+}
+
+.table input {
+    width: 120px;
+    border: 1px solid #e1e1e1;
+}
+
+
 .table>tbody>tr>td {
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .user-display-container table .action {
     cursor: pointer;
-    background: yellow;
+    background: #ff9800;
+    color: #fafafa;
+    text-align: center;
 }
 
 @media (max-width: 1000px) {

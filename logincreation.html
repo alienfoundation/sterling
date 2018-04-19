@@ -20,74 +20,17 @@
 <body>
     <div class="container-fluid">
 
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="logo-container">
-                    <img src="images/logo.png">
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <form>
-                <div class="login-wrapper">
-                    <div class="login-wrapper-shadow">
-                        <div class="heading">
-                            <h3>Login Creation</h3>
-                        </div>
-                        <div class="fields">
-                            <label for="username">
-                                Name
-                            </label>
-                            <input type="text" id="username">
-                            <label for="password">
-                                Email
-                            </label>
-                            <input type="password" id="password">
-
-                            <label for="password">
-                                Username
-                            </label>
-                            <input type="password" id="password">
-
-                            <label for="password">
-                                Password
-                            </label>
-                            <input type="password" id="password">
-
-                            <label for="role">
-                                Role
-                            </label>
-                            <input type="text" id="role">
-
-                            <label for="branch">
-                                Branch
-                            </label>
-                            <input type="text" id="branch">
-
-                            <label for="location">
-                                Location
-                            </label>
-                            <input type="text" id="location">
-
-                            <label for="isactive">
-                                Is Active
-                            </label>
-                            <input type="text" id="isactive">
-                
-                            <div class="submit-btn-container">
-                                <input type="submit" value="CONTINUE">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            </div>
-            <div class="col-sm-3"></div>
-        </div>
+            <nav>
+                    <ul>
+                        <li><img src="images/logo.png"></li>
+                        <li class="right">Nikhil Thakur<br>Admin</li>
+                    </ul>
+                </nav>
 
         <div class="user-display-container">
             <h2 class="heading">User Display</h2>
             <div class="table-responsive">
+                <form>
                 <table class="table table-striped" id="myTable">
                     <thead>
                         <tr>
@@ -99,22 +42,21 @@
                             <th>Branch</th>
                             <th>Location</th>
                             <th>Role</th>
-                            <th></th>
-                            <th></th>
+                            <th class="last"></th>
+                            <th class="last"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
-                            <td>Doe</td>
-                            <td class="action edit">Edit</td>
-                            <td class="action delete" onclick="deleteRowFunc(1)">Delete</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td class="action edit" colspan="2"><span class="glyphicon glyphicon-plus"></span></td>
                         </tr>
                         <tr>
                             <td>John</td>
@@ -125,8 +67,8 @@
                             <td>Doe</td>
                             <td>john@example.com</td>
                             <td>Doe</td>
-                            <td class="action edit">Edit</td>
-                            <td class="action delete" onclick="deleteRowFunc(2)">Delete</td>
+                            <td class="action edit"><span class="glyphicon glyphicon-pencil"></span></td>
+                            <td class="action delete" onclick="deleteRowFunc(1)"><span class="glyphicon glyphicon-trash"></span></td>
                         </tr>
                         <tr>
                             <td>John</td>
@@ -137,11 +79,24 @@
                             <td>Doe</td>
                             <td>john@example.com</td>
                             <td>Doe</td>
-                            <td class="action edit">Edit</td>
-                            <td class="action delete" onclick="deleteRowFunc(3)">Delete</td>
+                            <td class="action edit"><span class="glyphicon glyphicon-pencil"></span></td>
+                            <td class="action delete" onclick="deleteRowFunc(2)"><span class="glyphicon glyphicon-trash"></span></td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>Doe</td>
+                            <td class="action edit"><span class="glyphicon glyphicon-pencil"></span></td>
+                            <td class="action delete" onclick="deleteRowFunc(3)"><span class="glyphicon glyphicon-trash"></span></td>
                         </tr>
                     </tbody>
                 </table>
+            </form>
             </div>
         </div>
 

@@ -1,0 +1,107 @@
+body {
+    padding-top: 30px;
+    background: url("../images/loginbg4.jpg");
+    background-position: bottom;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 2px 7px -1px rgba(0,0,0,0.2);
+}
+
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 17px;
+    padding: 20px;
+    color: #444;
+}
+
+
+nav ul li:last-child {
+    float: right;
+    margin-right: 30px;
+}
+
+.product-master-container {
+    border-radius: 2px;
+    background: #fff;
+    margin-top: 40px;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 2px 7px -1px rgba(0,0,0,0.2);
+}
+
+.product-master-container .heading {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.product-master-container table {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.product-master-container th {
+    background: rgba(141, 29, 130, 0.8);
+    color: #fff;
+    font-weight: 500;
+}
+
+.table>thead>tr>th {
+    border-bottom: none;
+}
+
+.table>tbody>tr>td {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.table tr.purple td {
+    background: rgb(123, 0, 164);
+    color: #fafafa;
+}
+.table tr.red td {
+    color: #fafafa;
+    background: red;
+}
+.table tr.white td {
+    background: #fff;
+}
+.table tr.blue td {
+    color: #fafafa;
+    background: rgb(0, 174, 247);
+}
+
+
+.table tr input {
+    color: #333;
+    border-radius: 2px;
+    border: none;
+    padding: 5px;
+}
+
+.table tr input[type='submit'] {
+    background: none;
+    border: none;
+    color: #fafafa;
+}
+
+.table tr input:focus {
+    outline: none;
+}
+
+.product-master-container table td.action {
+    cursor: pointer;
+    color: #fafafa;
+    text-align: center;
+    background: #ff9800;
+}

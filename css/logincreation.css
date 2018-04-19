@@ -1,0 +1,196 @@
+body {
+    margin-top: 5%;
+    background: url("../images/loginbg4.jpg");
+    background-position: bottom;
+    background-size: cover;
+    padding-bottom: 70px;
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 2px 7px -1px rgba(0,0,0,0.2);
+}
+
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 17px;
+    padding: 20px;
+    color: #444;
+}
+
+
+nav ul li:last-child {
+    float: right;
+    margin-right: 30px;
+}
+
+.logo-container {
+    margin-left: 30px;
+    margin-right: -30px;
+    padding: 193px 25px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 2px 7px -1px rgba(0,0,0,0.2);
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.login-wrapper {
+    background: #fff;
+    background-size: cover;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 2px 7px -1px rgba(0,0,0,0.2);
+}
+
+.login-wrapper .login-wrapper-shadow {
+    padding: 40px;
+    border-radius: 3px;
+}
+
+.login-wrapper .heading h3 {
+    color: #444;
+    margin-bottom: 30px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+}
+
+.login-wrapper input {
+    display: block;
+    padding: 10px 5px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 20px;
+    color: #555;
+    transition: all 0.5s ease;
+}
+
+
+.login-wrapper .submit-btn-container {
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+.login-wrapper input[type="submit"] {
+    display: inline-block;
+    width: auto;
+    background: rgba(141, 29, 130, 0.8);
+    color: #fff;
+    font-weight: 400;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.login-wrapper input:focus {
+    outline: none;
+    border-bottom: 2px solid rgba(141, 29, 130, 0.8);
+}
+
+.login-wrapper label {
+    position: relative;
+    top: 36px;
+    left: 2px;
+    color: #555;
+    font-weight: 400;
+    top: 0;
+}
+
+
+.user-display-container {
+    border-radius: 2px;
+    background: #fff;
+    margin-top: 40px;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 2px 7px -1px rgba(0,0,0,0.2);
+}
+
+.user-display-container .heading {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.user-display-container table {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.user-display-container th {
+    background: rgba(141, 29, 130, 0.8);
+    color: #fff;
+    font-weight: 500;
+}
+
+.table>thead>tr>th {
+    border-bottom: none;
+}
+
+.table>tbody>tr>td {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.user-display-container table .action {
+    cursor: pointer;
+    background: yellow;
+}
+
+@media (max-width: 1000px) {
+    .login-wrapper {
+        width: 150%;
+    }
+
+    .logo-container {
+        margin-left: -50%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .logo-container {
+        margin-right: 0;
+        margin-left: 0;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .logo-container img {
+        width: 40%;
+    }
+
+    .login-wrapper {
+        height: auto;
+        width: 100%;
+    }
+
+    body {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo-container img {
+        width: 50%;
+    }
+
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

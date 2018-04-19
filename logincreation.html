@@ -70,7 +70,7 @@
                             <td>john@example.com</td>
                             <td>Doe</td>
                             <td class="action edit" onclick="editRowFunc(1)"><span class="glyphicon glyphicon-pencil"></span></td>
-                            <td class="action delete" onclick="deleteRowFunc(2)" onclick="document.getElementById('myForm2').submit();"><span class="glyphicon glyphicon-trash"></span></td>
+                            <td class="action delete" onclick="deleteRowFunc(2); document.getElementById('myForm2').submit();"><span class="glyphicon glyphicon-trash"></span></td>
                         </tr>
                         <tr id="r12" class="editable">
                             <td><input type="text" name="name" value="John"></td>
@@ -93,7 +93,7 @@
                             <td>john@example.com</td>
                             <td>Doe</td>
                             <td class="action edit" onclick="editRowFunc(2)"><span class="glyphicon glyphicon-pencil"></span></td>
-                            <td class="action delete" onclick="deleteRowFunc(2)" onclick="document.getElementById('myForm2').submit();"><span class="glyphicon glyphicon-trash"></span></td>
+                            <td class="action delete" onclick="deleteRowFunc(2); document.getElementById('myForm2').submit();" ><span class="glyphicon glyphicon-trash"></span></td>
                         </tr>
                         <tr id="r22" class="editable">
                             <td><input type="text" name="name" value="John"></td>
@@ -116,7 +116,7 @@
                             <td>john@example.com</td>
                             <td>Doe</td>
                             <td class="action edit" onclick="editRowFunc(3)"><span class="glyphicon glyphicon-pencil"></span></td>
-                            <td class="action delete" onclick="deleteRowFunc(3)" onclick="document.getElementById('myForm2').submit();"><span class="glyphicon glyphicon-trash"></span></td>
+                            <td class="action delete" onclick="deleteRowFunc(3); document.getElementById('myForm2').submit();"><span class="glyphicon glyphicon-trash"></span></td>
                         </tr>
                         <tr id="r32" class="editable">
                             <td><input type="text" name="name" value="John"></td>

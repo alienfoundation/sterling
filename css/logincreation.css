@@ -111,6 +111,9 @@ nav ul li.right {
     top: 0;
 }
 
+.editable {
+    display: none;
+}
 
 .user-display-container {
     border-radius: 2px;

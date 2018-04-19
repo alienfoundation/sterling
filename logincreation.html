@@ -30,7 +30,6 @@
         <div class="user-display-container">
             <h2 class="heading">User Display</h2>
             <div class="table-responsive">
-                <form>
                 <table class="table table-striped" id="myTable">
                     <thead>
                         <tr>
@@ -47,18 +46,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td class="action edit" colspan="2"><span class="glyphicon glyphicon-plus"></span></td>
-                        </tr>
-                        <tr>
+                        <form id="myForm">
+                            <tr>
+                                <td><input type="text" name="name"></td>
+                                <td><input type="text" name="email"></td>
+                                <td><input type="text" name="username"></td>
+                                <td><input type="text" name="password"></td>
+                                <td><input type="text" name="isactive"></td>
+                                <td><input type="text" name="branch"></td>
+                                <td><input type="text" name="location"></td>
+                                <td><input type="text" name="role"></td>
+                                <td class="action edit" colspan="2" onclick="document.getElementById('myForm').submit();"><span class="glyphicon glyphicon-plus"></span></td>
+                            </tr>
+                        </form>
+                        <form id="myForm2">
+                        <tr id="r11" >
                             <td>John</td>
                             <td>Doe</td>
                             <td>john@example.com</td>
@@ -67,10 +69,21 @@
                             <td>Doe</td>
                             <td>john@example.com</td>
                             <td>Doe</td>
-                            <td class="action edit"><span class="glyphicon glyphicon-pencil"></span></td>
-                            <td class="action delete" onclick="deleteRowFunc(1)"><span class="glyphicon glyphicon-trash"></span></td>
+                            <td class="action edit" onclick="editRowFunc(1)"><span class="glyphicon glyphicon-pencil"></span></td>
+                            <td class="action delete" onclick="deleteRowFunc(2)" onclick="document.getElementById('myForm2').submit();"><span class="glyphicon glyphicon-trash"></span></td>
                         </tr>
-                        <tr>
+                        <tr id="r12" class="editable">
+                            <td><input type="text" name="name" value="John"></td>
+                            <td><input type="text" name="email" value="john@example.com"></td>
+                            <td><input type="text" name="username" value="Doe"></td>
+                            <td><input type="text" name="password" value="Pass"></td>
+                            <td><input type="text" name="isactive" value="Doe"></td>
+                            <td><input type="text" name="branch" value="Ons"></td>
+                            <td><input type="text" name="location" value="Delhi"></td>
+                            <td><input type="text" name="role" value="Admin"></td>
+                            <td class="action" colspan="2" onclick="document.getElementById('myForm2').submit();">Save</td>
+                        </tr>
+                        <tr id="r21" >
                             <td>John</td>
                             <td>Doe</td>
                             <td>john@example.com</td>
@@ -79,10 +92,21 @@
                             <td>Doe</td>
                             <td>john@example.com</td>
                             <td>Doe</td>
-                            <td class="action edit"><span class="glyphicon glyphicon-pencil"></span></td>
-                            <td class="action delete" onclick="deleteRowFunc(2)"><span class="glyphicon glyphicon-trash"></span></td>
+                            <td class="action edit" onclick="editRowFunc(2)"><span class="glyphicon glyphicon-pencil"></span></td>
+                            <td class="action delete" onclick="deleteRowFunc(2)" onclick="document.getElementById('myForm2').submit();"><span class="glyphicon glyphicon-trash"></span></td>
                         </tr>
-                        <tr>
+                        <tr id="r22" class="editable">
+                            <td><input type="text" name="name" value="John"></td>
+                            <td><input type="text" name="email" value="john@example.com"></td>
+                            <td><input type="text" name="username" value="Doe"></td>
+                            <td><input type="text" name="password" value="Pass"></td>
+                            <td><input type="text" name="isactive" value="Doe"></td>
+                            <td><input type="text" name="branch" value="Ons"></td>
+                            <td><input type="text" name="location" value="Delhi"></td>
+                            <td><input type="text" name="role" value="Admin"></td>
+                            <td class="action" colspan="2" onclick="document.getElementById('myForm2').submit();">Save</td>
+                        </tr>
+                        <tr id="r31" >
                             <td>John</td>
                             <td>Doe</td>
                             <td>john@example.com</td>
@@ -91,12 +115,23 @@
                             <td>Doe</td>
                             <td>john@example.com</td>
                             <td>Doe</td>
-                            <td class="action edit"><span class="glyphicon glyphicon-pencil"></span></td>
-                            <td class="action delete" onclick="deleteRowFunc(3)"><span class="glyphicon glyphicon-trash"></span></td>
+                            <td class="action edit" onclick="editRowFunc(3)"><span class="glyphicon glyphicon-pencil"></span></td>
+                            <td class="action delete" onclick="deleteRowFunc(3)" onclick="document.getElementById('myForm2').submit();"><span class="glyphicon glyphicon-trash"></span></td>
                         </tr>
+                        <tr id="r32" class="editable">
+                            <td><input type="text" name="name" value="John"></td>
+                            <td><input type="text" name="email" value="john@example.com"></td>
+                            <td><input type="text" name="username" value="Doe"></td>
+                            <td><input type="text" name="password" value="Pass"></td>
+                            <td><input type="text" name="isactive" value="Doe"></td>
+                            <td><input type="text" name="branch" value="Ons"></td>
+                            <td><input type="text" name="location" value="Delhi"></td>
+                            <td><input type="text" name="role" value="Admin"></td>
+                            <td class="action" colspan="2" onclick="document.getElementById('myForm2').submit();">Save</td>
+                        </tr>
+                    </form>
                     </tbody>
                 </table>
-            </form>
             </div>
         </div>
 

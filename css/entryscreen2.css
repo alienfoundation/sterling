@@ -50,6 +50,17 @@ nav ul li.right {
     margin-bottom: 20px;
 }
 
+.product-master-container .heading-small {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    display: none;
+}
+
+
 .product-master-container .date,
 .product-master-container .branch {
     font-size: 17px;
@@ -85,5 +96,13 @@ nav ul li.right {
 @media (max-width: 767px) {
     nav ul {
         padding: 0;
+    }
+
+    .heading {
+        display: none;
+    }
+
+    .product-master-container .heading-small {
+        display: block;
     }
 }
